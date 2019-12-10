@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<div class="container">
+    <h1 font size  align="center" style="color:Dodgerblue; font-size:100px">Video Game Website</h1>
+  </div>
+</header>
+
+	<div class="navbar">
+    <div class = "dropdown">
+    <button onclick="window.location.href='index.html'" style="color:Black; font-size:13px"">Home</button>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='about1.html'" style="color:Black; font-size:13px">About</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='photoshopmeme1.html'" style="color:Black; font-size:13px">Photoshop Meme</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='illustrator1.html'" style="color:Black; font-size:13px">Illustrator Image</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='thanossnap1.html'" style="color:Black; font-size:13px">Thanos Snap</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='glitchart1.html'" style="color:Black; font-size:13px">Glitch Art</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='audacityglitchart1.html'" style="color:Black; font-size:13px">Audacity Glitch Art</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='videogamewebsite1.html'" style="color:Black; font-size:13px">Video Game Website</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='testprocessor1.html'" style="color:Black; font-size:13px">Test Processor</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='selfportrait1.html'" style="color:Black; font-size:13px">Self Portrait</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='3dmashup1.html'" style="color:Black; font-size:13px">3D Mashup</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='codeasart1.html'" style="color:Black; font-size:13px">Code As Art</button>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='Final Project.html'" style="color:Black; font-size:13px">Final Project</button>
+    </div>
+</div>
+<head>
+	<meta charset="UTF-8">
+  <title>Jacob Dena Art 74 Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<img src="photovideos/website.png" width="500" height="600" style="float:left;">
+</body>
+<body p1 style="color:white; text-align:right; font-size: 40px"> This was a group project among me and two of my classmates that have worked on this website for weeks. This is a website we created as a group to give new gamers an opportunity to try new games that are popular and have good ratings from video game critics. This was all used by coding from the Sublime program. Sublime provided the index for us and we just make our HTML code and CSS. The hardest part was creating the CSS because of the layers and buttons in the website that was hard to figure out, but overtime we all knew how to function it properly due to the past errors we ran into. I have always wanted to create a website and video games is one of my favorite hobbies as a teenager and was fun to work on when creating video game information content. With HTMl and CSS tutorials for better knowledge helped us complete this website to be the way we wanted it to be. <p><a href="http://JacobDena.github.io/">Video Game Website</a></p>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <meta charset="utf-8">
+        <title>Matrix</title>
+</head>
+    <body>
+    <div align="center">
+    <canvas id="q" width="500" height="1000">Sorry Browser Won't Support</canvas><br/><br/>
+    </div>
+<script>
+$(document).ready(function(){
+var s=window.screen;
+var width = q.width=s.width;
+var height = q.height;
+var yPositions = Array(300).join(0).split('');
+var ctx=q.getContext('2d');
+
+var draw = function () {
+  ctx.fillStyle='rgba(0,0,0,.05)';
+  ctx.fillRect(0,0,width,height);
+  ctx.fillStyle='#0F0';
+  ctx.font = '10pt Georgia';
+  yPositions.map(function(y, index){
+    text = String.fromCharCode(1e2+Math.random()*33);
+    x = (index * 10)+10;
+    q.getContext('2d').fillText(text, x, y);
+    if(y > 100 + Math.random()*1e4)
+    {
+      yPositions[index]=0;
+    }
+    else
+    {
+      yPositions[index] = y + 10;
+    }
+  });
+};
+RunMatrix();
+function RunMatrix()
+{
+if(typeof Game_Interval != "undefined") clearInterval(Game_Interval);
+        Game_Interval = setInterval(draw, 33);
+}
+function StopMatrix()
+{
+clearInterval(Game_Interval);
+}
+//setInterval(draw, 33);
+$("button#pause").click(function(){
+StopMatrix();});
+$("button#play").click(function(){RunMatrix();});
+
+})
+</script>
+</body>
+
+</body>
+
+
+<style>
+body {
+  background-image: url('photovideos/black.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>

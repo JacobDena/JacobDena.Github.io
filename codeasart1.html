@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<div class="container">
+    <h1 font size  align="center" style="color:Dodgerblue; font-size:100px">Code As Art</h1>
+  </div>
+</header>
+
+	<div class="navbar">
+    <div class = "dropdown">
+    <button onclick="window.location.href='index.html'" style="color:Black; font-size:13px"">Home</button>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='about1.html'" style="color:Black; font-size:13px">About</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='photoshopmeme1.html'" style="color:Black; font-size:13px">Photoshop Meme</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='illustrator1.html'" style="color:Black; font-size:13px">Illustrator Image</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='thanossnap1.html'" style="color:Black; font-size:13px">Thanos Snap</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='glitchart1.html'" style="color:Black; font-size:13px">Glitch Art</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='audacityglitchart1.html'" style="color:Black; font-size:13px">Audacity Glitch Art</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='videogamewebsite1.html'" style="color:Black; font-size:13px">Video Game Website</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='testprocessor1.html'" style="color:Black; font-size:13px">Test Processor</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='selfportrait1.html'" style="color:Black; font-size:13px">Self Portrait</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='3dmashup1.html'" style="color:Black; font-size:13px">3D Mashup</button>
+    </div>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='codeasart1.html'" style="color:Black; font-size:13px">Code As Art</button>
+
+    <div class = "dropdown-2">
+    <button onclick="window.location.href='Final Project.html'" style="color:Black; font-size:13px">Final Project</button>
+    </div>
+</div>
+<head>
+    <meta charset="UTF-8">
+  <title>Jacob Dena Art 74 Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img src="photovideos/sketch.png" width="700" height="600" style="float:left;">
+</body>
+<body p1 style="color:white; text-align:right; font-size: 40px"> The latest project I created is a sketch image made from processor. Processor is also the program I used to create my self portrait which took more time than this one. The picture shown here is a moving image where the image is created by ellipse circles with the colors of the image. The image is Master Chief from the Halo franchise series which is my favorite game growing up. When I discovered that I can do moving objects on processor I decided to do something like this. the circles is what creates the image in a moving effect which is what I enjoyed because its something different than a solid image that does not move. Great visuals when viewing the actual sketch.
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <meta charset="utf-8">
+        <title>Matrix</title>
+</head>
+    <body>
+    <div align="center">
+    <canvas id="q" width="500" height="1000">Sorry Browser Won't Support</canvas><br/><br/>
+    </div>
+<script>
+$(document).ready(function(){
+var s=window.screen;
+var width = q.width=s.width;
+var height = q.height;
+var yPositions = Array(300).join(0).split('');
+var ctx=q.getContext('2d');
+
+var draw = function () {
+  ctx.fillStyle='rgba(0,0,0,.05)';
+  ctx.fillRect(0,0,width,height);
+  ctx.fillStyle='#0F0';
+  ctx.font = '10pt Georgia';
+  yPositions.map(function(y, index){
+    text = String.fromCharCode(1e2+Math.random()*33);
+    x = (index * 10)+10;
+    q.getContext('2d').fillText(text, x, y);
+    if(y > 100 + Math.random()*1e4)
+    {
+      yPositions[index]=0;
+    }
+    else
+    {
+      yPositions[index] = y + 10;
+    }
+  });
+};
+RunMatrix();
+function RunMatrix()
+{
+if(typeof Game_Interval != "undefined") clearInterval(Game_Interval);
+        Game_Interval = setInterval(draw, 33);
+}
+function StopMatrix()
+{
+clearInterval(Game_Interval);
+}
+//setInterval(draw, 33);
+$("button#pause").click(function(){
+StopMatrix();});
+$("button#play").click(function(){RunMatrix();});
+
+})
+</script>
+</body>
+
+
+
+</body>
+
+
+<style>
+body {
+  background-image: url('photovideos/black.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
